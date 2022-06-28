@@ -12,16 +12,22 @@ import java.util.Properties;
 
 public class Util {
 
-    private static Connection c = null;
+    private static Connection connection = null;
+    private final static String driver = "com.mysql.cj.jdbc.Driver";
+    private final static String url = "jdbc:mysql://localhost:3306";
+    private final static String schemaName = "/pre_proj_schema";
+    private final static String user = "root";
+    private final static String password = "Duplenkova1430849";
+    private final static String dialect = "org.hibernate.dialect.MySQL5Dialect";
 
     private static SessionFactory sessionFactory;
 
-    public static Statement getStatement () throws SQLException {
-        if (c == null) {
-            c = DriverManager.getConnection("jdbc:mysql://localhost:3306",
-                    "root", "Duplenkova1430849");
+    public static Connection getConnection () throws SQLException {
+        if (connection == null) {
+            connection = DriverManager.getConnection(url, user, password);
         }
-        return c.createStatement();
+        return connection;
+        //return connection.createStatement();
     }
 
     public static SessionFactory getSessionFactory() {
@@ -32,11 +38,11 @@ public class Util {
 
                 Properties settings = new Properties();
 
-                settings.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
-                settings.put(Environment.URL, "jdbc:mysql://localhost:3306/pre_proj_schema");
-                settings.put(Environment.USER, "root");
-                settings.put(Environment.PASS, "Duplenkova1430849");
-                settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQL5Dialect");
+                settings.put(Environment.DRIVER, driver);
+                settings.put(Environment.URL, url + schemaName);
+                settings.put(Environment.USER, user);
+                settings.put(Environment.PASS, password);
+                settings.put(Environment.DIALECT, dialect);
 
                 configuration.setProperties(settings);
 

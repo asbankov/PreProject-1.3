@@ -9,23 +9,27 @@ import jm.task.core.jdbc.service.UserServiceImpl;
 import jm.task.core.jdbc.util.Util;
 import org.hibernate.SessionFactory;
 
-import java.sql.SQLException;
-import java.sql.*;
+
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        UserService ud = new UserServiceImpl();
-        ud.createUsersTable();
-        ud.saveUser("Paul", "McCartney", (byte)19);
-        ud.saveUser("John", "Lennon", (byte)20);
-        ud.saveUser("George", "Harrisson", (byte)20);
-        ud.saveUser("Ringo", "Star", (byte)20);
-        List<User> users = ud.getAllUsers();
+        UserService userService = new UserServiceImpl();
+        userService.createUsersTable();
+        userService.saveUser("John", "Lennon", (byte)20);
+        //System.out.println("User John Lennon added");
+        userService.saveUser("Paul", "McCartney", (byte)19);
+        //System.out.println("User Paul McCartney added");
+        userService.saveUser("George", "Harrisson", (byte)20);
+        //System.out.println("User George Harrisson added");
+        userService.saveUser("Ringo", "Star", (byte)20);
+        //System.out.println("User Ringo Star added");
+        List<User> users = userService.getAllUsers();
+        //System.out.println(users.size());
         for (User u : users) {
             System.out.println(u);
         }
-        ud.cleanUsersTable();
-        ud.dropUsersTable();
+        userService.cleanUsersTable();
+        userService.dropUsersTable();
     }
 }
