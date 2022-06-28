@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="UserServiceTest" time="1.381" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="UserServiceTest" time="1.107" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.3.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -29,7 +29,7 @@
     <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.3.3\plugins\maven\lib\maven-event-listener.jar"/>
     <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.3.3\plugins\maven\lib\maven3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
-    <property name="java.library.path" value="C:\Users\anton\.jdks\openjdk-18\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\chromedriver;C:\Program Files (x86)\MiKTeX\miktex\bin\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\anton\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\anton\AppData\Local\Programs\Python\Python39\;C:\Users\anton\AppData\Roaming\local\bin;C:\Users\anton\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\anton\AppData\Local\Programs\Python\Python38-32\;C:\Ruby27-x64\bin;C:\Users\anton\AppData\Local\Microsoft\WindowsApps;C:\Users\anton\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\anton\AppData\Local\atom\bin;C:\Users\anton\AppData\Roaming\cabal\bin;C:\ProgramData\chocolatey\lib\ghc\tools\ghc-8.10.2\bin;C:\tools\msys64;C:\Users\anton\AppData\Local\Microsoft\WindowsApps;C:\C++ compiler\mingw64\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2021.3.3\bin;;."/>
+    <property name="java.library.path" value="C:\Users\anton\.jdks\openjdk-18\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\chromedriver;C:\Program Files (x86)\MiKTeX\miktex\bin\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\anton\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\anton\AppData\Local\Programs\Python\Python39\;C:\Users\anton\AppData\Roaming\local\bin;C:\Users\anton\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\anton\AppData\Local\Programs\Python\Python38-32\;C:\Ruby27-x64\bin;C:\Users\anton\AppData\Local\Microsoft\WindowsApps;C:\Users\anton\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\anton\AppData\Local\atom\bin;C:\Users\anton\AppData\Roaming\cabal\bin;C:\ProgramData\chocolatey\lib\ghc\tools\ghc-8.10.2\bin;C:\tools\msys64;C:\Users\anton\AppData\Local\Microsoft\WindowsApps;C:\C++ compiler\mingw64\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2021.3.3\bin;;."/>
     <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.3.3\plugins\maven\lib\maven3/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="62.0"/>
@@ -60,10 +60,10 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="UserServiceTest" name="saveUser" time="1.029"/>
-  <testcase classname="UserServiceTest" name="removeUserById" time="0.088"/>
-  <testcase classname="UserServiceTest" name="getAllUsers" time="0.096"/>
-  <testcase classname="UserServiceTest" name="dropUsersTable" time="0.016"/>
-  <testcase classname="UserServiceTest" name="createUsersTable" time="0.024"/>
-  <testcase classname="UserServiceTest" name="cleanUsersTable" time="0.128"/>
+  <testcase classname="UserServiceTest" name="saveUser" time="0.923"/>
+  <testcase classname="UserServiceTest" name="removeUserById" time="0.041"/>
+  <testcase classname="UserServiceTest" name="getAllUsers" time="0.037"/>
+  <testcase classname="UserServiceTest" name="dropUsersTable" time="0.015"/>
+  <testcase classname="UserServiceTest" name="createUsersTable" time="0.023"/>
+  <testcase classname="UserServiceTest" name="cleanUsersTable" time="0.068"/>
 </testsuite>
